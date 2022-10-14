@@ -82,29 +82,63 @@ svg {
   font-weight: 700;
 }
 
-#menu-container {
+.menu-container {
   margin: 40px 0px 20px 10px;
 }
 
-#menu-container ul li {
+.menu-container ul li {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-#menu-container ul li img {
+.menu-container ul li img {
   width: 20px;
 }
 
-#menu-container ul li h1 {
+.menu-container ul li h1 {
   font-size: 18px;
   font-weight: 500;
   margin-left: 20px;
+}
+
+#support-sub {
+  margin-top: 50px;
 }
 
 .header {
   background-color: white;
   grid-template: 2;
   grid-row: 1;
+}
+
+.header img {
+  width: 20px;
+}
+
+.header .header-container {
+  padding: 20px 40px 30px 40px;
+}
+
+.header #top-section {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr 0.2fr 0.28fr 0.6fr;
+  align-items: center;
+}
+
+.header #top-section input {
+  width: 550px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.header #top-section p {
+  font-weight: 500;
+}
+
+.header #avatar-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .main-content {
