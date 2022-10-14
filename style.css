@@ -37,8 +37,8 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
 }
 
 img,
@@ -61,7 +61,7 @@ svg {
   background-color: #0ea5e9;
   grid-column: 1;
   grid-row: 1/5;
-  color: #f0f9ff;
+  color: #ffff;
 }
 
 .sidebar-container {
@@ -106,7 +106,7 @@ svg {
 }
 
 .header {
-  background-color: white;
+  background-color: #ffff;
   grid-template: 2;
   grid-row: 1;
 }
@@ -139,6 +139,33 @@ svg {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.header #botton-section {
+  display: grid;
+  grid-template-columns: 0.1fr 0.5fr 0.115fr 0.115fr 0.115fr;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header #botton-section img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header #botton-section p:last-child {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.header #botton-section a {
+  background-color: #0ea5e9;
+  color: #ffff;
+  text-align: center;
+  margin-right: 25px;
+  border-radius: 60px;
+  padding: 6px 8px;
 }
 
 .main-content {
