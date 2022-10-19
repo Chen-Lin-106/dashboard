@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  opacity: 0.5;
+}
+
 img,
 picture,
 svg {
@@ -136,6 +140,7 @@ svg {
 
 .header #top-section p {
   font-weight: 500;
+  opacity: 1;
 }
 
 .header #avatar-image {
@@ -155,6 +160,10 @@ svg {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.header #text-display p {
+  opacity: 1;
 }
 
 .header #botton-section p:last-child {
@@ -177,10 +186,9 @@ svg {
   grid-row: 2/5;
   display: grid;
   grid-template-columns: 0.33fr 0.33fr 0.3fr;
-  grid-template-rows: 20px 237px 65px 15px 125px 237px;
+  grid-template-rows: 20px 237px 67px 15px 125px 237px;
   grid-gap: 15px;
   padding: 20px 30px 20px 20px;
-  position: relative;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -239,15 +247,23 @@ svg {
   border-radius: 10px;
 }
 
-.project-card::after {
-  position: absolute;
-  background-color: #f0b329;
-  left: -120px;
-  top: -20px;
+.card-description {
+  position: relative;
+  padding: 20px 30px 20px 30px;
 }
 
-.card-description {
-  padding: 20px 30px 20px 30px;
+.card-description::after {
+  content: "";
+  width: 10px;
+  height: 238px;
+  position: absolute;
+  background-color: #f0b329;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .card-description h1 {
@@ -263,7 +279,6 @@ svg {
 
 .add-share-btn a {
   margin-left: 20px;
-  display: block;
 }
 
 .add-share-btn img {
@@ -274,10 +289,45 @@ svg {
   background-color: #ffff;
   grid-column: 3/4;
   grid-row: 2/4;
+  padding: 25px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-.trending-card {
+.announcement-card {
+  margin-top: 20px;
+  border-bottom: solid grey;
+}
+
+.announcement-card h1 {
+  font-weight: 700;
+}
+
+.trending-cards {
   background-color: #ffff;
   grid-column: 3/4;
   grid-row: 5/7;
+  padding: 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.trending-card {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.trending-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.trending-card .name-area {
+  margin-left: 20px;
+}
+
+.name-area p:first-child {
+  opacity: 1;
 }
